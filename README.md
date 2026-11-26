@@ -142,9 +142,10 @@ managed_components/        ESP-IDF managed dependencies
 
 This project is adapted from:
 
-- <https://github.com/johndeckardsoftware/espectrum>
-- SUZUKI PLAN Z80 emulator
-- SoftSpectrum48 snapshot and format code
+- [atomic14](https://github.com/atomic14/esp32-zxspectrum)
+- [SUZUKI PLAN Z80 emulator](https://github.com/suzukiplan/z80)
+- SoftSpectrum48 snapshot and tape handling
+- Sashnov Alexander <sashnov@ngs.ru> and Roman Scherbakov <v_soft@nm.ru>
 - LovyanGFX
 - Espressif ESP-IDF components
 
