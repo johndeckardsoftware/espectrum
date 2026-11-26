@@ -1,0 +1,18 @@
+{
+    "idf.currentSetup": "/home/ubuntu/.espressif/v5.4.4/esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32s3"
+    },
+    "clangd.path": "/home/ubuntu/.espressif/tools/esp-clangd/esp-21.1.3_20260408/esp-clangd/bin/clangd",
+    "clangd.arguments": [
+      "--background-index",
+      "--query-driver=**",
+      "--compile-commands-dir=/home/ubuntu/devs/esp/espectrum/build"
+    ],
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "idf.flashType": "JTAG",
+    "idf.port": "/dev/ttyACM0"
+}

@@ -1,0 +1,18 @@
+[scheme:iram_text]
+entries:
+    text -> iram0_text
+    rodata -> flash_rodata
+    data -> dram0_data
+    bss -> dram0_bss
+    common -> dram0_bss
+    iram -> iram0_text
+    dram -> dram0_data
+    rtc_text -> rtc_text
+    rtc_data -> rtc_data
+    rtc_rodata -> rtc_data
+    rtc_bss -> rtc_bss
+
+[mapping:main_opt]
+archive: libmain.a
+entries:
+    emulator_task (iram_text)

@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug ZX Emulator",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_ubuntu/espectrum-ubuntu",
+      "args1": ["${workspaceFolder}/build_ubuntu/tapes/vt2play.tap"],
+      "args2": ["${workspaceFolder}/build_ubuntu/snapshot/snake.z80"],
+      "args3": ["${workspaceFolder}/main/support/tapeloaders/tape_48.szx"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "enable pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "make zx (debug)"
+    },
+    {
+      "name": "Run ZX Emulator (Release)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_ubuntu/espectrum",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "make zx (release)"
+    }
+  ]
+}
