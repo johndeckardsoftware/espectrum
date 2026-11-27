@@ -93,7 +93,6 @@ void screenShot(void)
     int prog = Config::getScreenshotProg();
     char fullPath[256];
     snprintf(fullPath, sizeof(fullPath), "/sdcard/screenshot_%03d.bmp", prog);
-    if (current_menu)
     displaySystem.saveFullScreenshot(fullPath, vkb, (current_menu ? current_menu->getOverlaySprite() : nullptr));
 
     snprintf(fullPath, sizeof(fullPath), "/sdcard/zxscreenshot_%03d.bmp", prog);
